@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+
+		<title>Damas Chinas</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        
+        <script>
+
+            function createNewPieces(element)
+			{
+                var n =1;
+            
+	            for(var i=2;i<=8;i+=2){
+	            	var img = document.createElement("img");
+	            	img.id = n;
+                    img.src = "../minimo/imgs/PieceWhite.png";
+	            	img.className = "img";
+                   	document.getElementById( "C" + i ).appendChild(img);
+                    n++;
+	           	}
+
+                for(var i=9;i<=15;i+=2){
+                    var img = document.createElement("img");
+                    img.id = n;
+                    img.src = "../minimo/imgs/PieceWhite.png";
+                    img.className = "img";
+                    document.getElementById( "C" + i ).appendChild(img);
+                    n++;
+                }
+
+                for(var i=18;i<=24;i+=2){
+                    var img = document.createElement("img");
+                    img.id = n;
+                    img.src = "../minimo/imgs/PieceWhite.png";
+                    img.className = "img";
+                    document.getElementById( "C" + i ).appendChild(img);
+                    n++;
+                }
+
+                for(var i=41;i<=47;i+=2){
+                    var img = document.createElement("img");
+                    img.id = n;
+                    img.src = "../minimo/imgs/PieceRed.png";
+                    img.className = "img";
+                    document.getElementById( "C" + i ).appendChild(img);
+                    n++;
+                }
+
+                for(var i=50;i<=56;i+=2){
+                    var img = document.createElement("img");
+                    img.id = n;
+                    img.src = "../minimo/imgs/PieceRed.png";
+                    img.className = "img";
+                    document.getElementById( "C" + i ).appendChild(img);
+                    n++;
+                }
+
+                for(var i=57;i<=63;i+=2){
+                    var img = document.createElement("img");
+                    img.id = n;
+                    img.src = "../minimo/imgs/PieceRed.png";
+                    img.className = "img";
+                    document.getElementById( "C" + i ).appendChild(img);
+                    n++;
+                }
+
+            }
+
+            var img = document.querySelector("#f13");
+
+            img.onclick = function(){
+                alert(this.id);
+            }
+
+        </script>
+        
+	</head>
+
+	<body>
+		
+		<div class="contenedor">
+		<!--<div class="row">  <img src='../JavaScript/PieceRed.png'/>
+               <div class="col-md-12">-->
+                    <div class="tablero">
+                        <div id="checkersContainer">
+                            <div id="checkersBoard">
+
+                                <div class="checkersSquare bright" id="C1">
+                                </div>
+                                <div class="checkersSquare dark" id="C2">
+                                    <img src='../minimo/imgs/PieceWhite.png' id="f1" class="white"/>
+                                </div>
+                                <div class="checkersSquare bright" id="C3">
+                                </div>
+                                <div class="checkersSquare dark" id="C4">
+                                    <img src='../minimo/imgs/PieceWhite.png' id="f2" class="white"/>
+                                </div>
+                                <div class="checkersSquare bright" id="C5">
+                                </div>
+                                <div class="checkersSquare dark" id="C6">
+                                    <img src='../minimo/imgs/PieceWhite.png' id="f3" class="white"/>
+                                </div>
+                                <div class="checkersSquare bright" id="C7">
+                                </div>
+                                <div class="checkersSquare dark" id="C8">
+                                    <img src='../minimo/imgs/PieceWhite.png' id="f4" class="white"/>
+                                </div>
+                                <div class="checkersSquare dark" id="C9">
+                                    <img src='../minimo/imgs/PieceWhite.png' id="f5" class="white"/>
+                                </div>
+                                <div class="checkersSquare bright" id="C10">
+                                </div>
+                                <div class="checkersSquare dark" id="C11">
+                                    <img src='../minimo/imgs/PieceWhite.png' id="f6" class="white"/>
+                                </div>
+                                <div class="checkersSquare bright" id="C12">
+                                </div>
+                                <div class="checkersSquare dark" id="C13">
+                                    <img src='../minimo/imgs/PieceWhite.png' id="f7" class="white"/>
+                                </div>
+                                <div class="checkersSquare bright" id="C14">
+                                </div>
+                                <div class="checkersSquare dark" id="C15">
+                                    <img src='../minimo/imgs/PieceWhite.png' id="f8" class="white"/>
+                                </div>
+                                <div class="checkersSquare bright" id="C16">
+                                </div>
+                                <div class="checkersSquare bright" id="C17">
+                                </div>
+                                <div class="checkersSquare dark" id="C18">
+                                    <img src='../minimo/imgs/PieceWhite.png' id="f9" class="white"/>
+                                </div>
+                                <div class="checkersSquare bright" id="C19">
+                                </div>
+                                <div class="checkersSquare dark" id="C20">
+                                    <img src='../minimo/imgs/PieceWhite.png' id="f10" class="white"/>
+                                </div>
+                                <div class="checkersSquare bright" id="C21">
+                                </div>
+                                <div class="checkersSquare dark" id="C22">
+                                    <img src='../minimo/imgs/PieceWhite.png' id="f11" class="white"/>
+                                </div>
+                                <div class="checkersSquare bright" id="C23">
+                                </div>
+                                <div class="checkersSquare dark" id="C24">
+                                    <img src='../minimo/imgs/PieceWhite.png' id="f12" class="white"/>
+                                </div>
+                                <div class="checkersSquare dark" id="C25">
+                                </div>
+                                <div class="checkersSquare bright" id="C26">
+                                </div>
+                                <div class="checkersSquare dark" id="C27">
+                                </div>
+                                <div class="checkersSquare bright" id="C28">
+                                </div>
+                                <div class="checkersSquare dark" id="C29">
+                                </div>
+                                <div class="checkersSquare bright" id="C30">
+                                </div>
+                                <div class="checkersSquare dark" id="C31">
+                                </div>
+                                <div class="checkersSquare bright" id="C32">
+                                </div>
+                                <div class="checkersSquare bright" id="C33">
+                                </div>
+                                <div class="checkersSquare dark" id="C34">
+                                </div>
+                                <div class="checkersSquare bright" id="C35">
+                                </div>
+                                <div class="checkersSquare dark" id="C36">
+                                </div>
+                                <div class="checkersSquare bright" id="C37">
+                                </div>
+                                <div class="checkersSquare dark" id="C38">
+                                </div>
+                                <div class="checkersSquare bright" id="C39">
+                                </div>
+                                <div class="checkersSquare dark" id="C40">
+                                </div>
+                                <div class="checkersSquare dark" id="C41">
+                                    <img src='../minimo/imgs/PieceRed.png' id="f13" class="red"/>
+                                </div>
+                                <div class="checkersSquare bright" id="C42">
+                                </div>
+                                <div class="checkersSquare dark" id="C43">
+                                    <img src='../minimo/imgs/PieceRed.png' id="f14" class="red"/>
+                                </div>
+                                <div class="checkersSquare bright" id="C44">
+                                </div>
+                                <div class="checkersSquare dark" id="C45">
+                                    <img src='../minimo/imgs/PieceRed.png' id="f15" class="red"/>
+                                </div>
+                                <div class="checkersSquare bright" id="C46">
+                                </div>
+                                <div class="checkersSquare dark" id="C47">
+                                    <img src='../minimo/imgs/PieceRed.png' id="f16" class="red"/>
+                                </div>
+                                <div class="checkersSquare bright" id="C48">
+                                </div>
+                                <div class="checkersSquare bright" id="C49">
+                                </div>
+                                <div class="checkersSquare dark" id="C50">
+                                    <img src='../minimo/imgs/PieceRed.png' id="f17" class="red"/>
+                                </div>
+                                <div class="checkersSquare bright" id="C51">
+                                </div>
+                                <div class="checkersSquare dark" id="C52">
+                                    <img src='../minimo/imgs/PieceRed.png' id="f18" class="red"/>
+                                </div>
+                                <div class="checkersSquare bright" id="C53">
+                                </div>
+                                <div class="checkersSquare dark" id="C54">
+                                    <img src='../minimo/imgs/PieceRed.png' id="f19" class="red"/>
+                                </div>
+                                <div class="checkersSquare bright" id="C55">
+                                </div>
+                                <div class="checkersSquare dark" id="C56">
+                                    <img src='../minimo/imgs/PieceRed.png' id="f20" class="red"/>
+                                </div>
+                                <div class="checkersSquare dark" id="C57">
+                                    <img src='../minimo/imgs/PieceRed.png' id="f21" class="red"/>
+                                </div>
+                                <div class="checkersSquare bright" id="C58">
+                                </div>
+                                <div class="checkersSquare dark" id="C59">
+                                    <img src='../minimo/imgs/PieceRed.png' id="f22" class="red"/>
+                                </div>
+                                <div class="checkersSquare bright" id="C60">
+                                </div>
+                                <div class="checkersSquare dark" id="C61">
+                                    <img src='../minimo/imgs/PieceRed.png' id="f23" class="red"/>
+                                </div>
+                                <div class="checkersSquare bright" id="C62">
+                                </div>
+                                <div class="checkersSquare dark" id="C63">
+                                    <img src='../minimo/imgs/PieceRed.png' id="f24" class="red"/>
+                                </div>
+                                <div class="checkersSquare bright" id="C64">
+                                </div>
+
+                                <!--<div id="moveNotAllowed">
+                                    <img alt="move not allowed" src="imgs/notAllowed.png">
+                                </div>-->
+                                
+                            </div>
+
+                            <!--<div id="notificationDiv">
+                                <div id="notificationContainer">
+                                    <span class="notificationMessage">Mensajes</span>
+                                    <img alt="close" id="closeNotification" src="imgs/Close.png">
+                                </div>
+                            </div>-->
+                            <div id="buttonContainer" class="text-center">
+                                <div id="newGameButton" onclick=""> Boton de pruebas </div>
+                            </div>
+                        </div>
+                    </div>
+            <!--</div>
+            </div>-->
+                    
+        </div>
+		
+	</body>
+
+</html>

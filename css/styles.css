@@ -1,0 +1,77 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+.text-center{text-align:center}
+
+img{
+	vertical-align:middle;
+}
+
+
+#checkersContainer {
+    width: 490px;
+    position: relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#checkersBoard {
+    border: 5px solid #999999;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+	margin-top:30px;
+	height:480px;
+}
+
+#checkersBoard .checkersSquare.bright {
+
+    background: -webkit-gradient(linear,center bottom,center top,from(#ffffff),to(#eeeeee));
+    background-color: white;
+}
+
+#checkersBoard .checkersSquare.dark {
+	
+    background: -webkit-gradient(linear,center bottom,center top,from(#333333),to(#222222));
+   	background-color: black;
+}
+
+#checkersBoard .checkersSquare {
+    height: 60px;
+    width: 60px;
+    float: left;
+}
+
+#checkersBoard .piece {
+    width: 60px;
+    height: 60px;
+	position:absolute;
+	left:0px;
+	top:0px;
+
+}
+
+#buttonContainer {
+	margin-bottom:10px;
+}
+
+#newGameButton {
+	
+	-webkit-border-radius:12px;
+	background: -webkit-gradient(linear,center bottom,center top,from(#3d94d1),to(#57aeea));
+  	background-color:lightBlue;
+	display:inline-block;
+	font-size:21px;
+	margin-top:20px;
+	padding:10px 45px;
+	vertical-align:middle;
+	font-family:Arial;
+	color:#fff;
+	border:1px solid #84C5F3;
+	text-shadow:0 0 3px #333333;
+	cursor:pointer;
+
+}
